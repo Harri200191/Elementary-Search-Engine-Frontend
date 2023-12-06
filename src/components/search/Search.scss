@@ -1,0 +1,213 @@
+/* SearchBar.css (CSS Styles) */
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    min-height: 60vh; 
+  }
+  
+  .logo { 
+    width: 400px; /* Adjust the size as needed */
+    height: 170px; /* Adjust the size as needed */ 
+    max-width: 100%; /* Allow the logo to scale with the container */
+    height: auto; 
+  }
+  
+  .search-bar {
+    margin-bottom: 10px;
+    display: flex;
+    width: 600px;
+    align-items: center;
+    border: 1px solid #535353;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-top: 10px; /* Adjust the margin as needed */  
+
+ 
+    width: 100%; /* Make the search bar full width */
+    max-width: 600px;   
+  }
+  
+  input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 50px;
+  }
+    
+  .icons {
+    display: flex;
+  }
+  
+  .search-icon{
+    background-color: #ffffff;  
+    color: white;
+    padding: 1px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+
+  .speech-icon {
+    background-color: #ffffff;  
+    margin-right: 10px;
+    color: white;
+    padding: 1px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+
+  .clear-icon {
+    background-color: #ffffff;  
+    margin-right: 10px;
+    color: red;
+    padding: 1px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .speech-icon:hover {
+    transform: scale(1.2); /* Adjust the scale factor as needed */
+    cursor: pointer;
+  }  
+
+  .search-icon:hover {
+    transform: scale(1.2); /* Adjust the scale factor as needed */
+    cursor: pointer;
+  }  
+
+  .clear-icon:hover {
+    transform: scale(1.2); /* Adjust the scale factor as needed */
+    cursor: pointer;
+  }  
+
+  /* Margin between icons */
+  .search-icon + .speech-icon {
+    margin-left: 5px;
+  }
+
+  .search-button {
+    width: 100px;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #4285f4; /* Default color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Change color on hover */
+  .search-button:hover { 
+    transform: scale(1.1); /* Adjust the scale factor as needed */
+    cursor: pointer;
+  }
+
+  .add-article-button {
+    width: 100px;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #000000; /* Default color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  .add-article-button:hover {
+    background-color: #5c5c5c; /* New color on hover */
+    transform: scale(1.1); /* Adjust the scale factor as needed */
+    cursor: pointer;
+  }
+  
+.buttons{ 
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 600px) {
+  .buttons {
+      flex-direction: row; /* Display buttons in a row on larger screens */ 
+  }
+}
+
+.stop-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.stop-icon:hover {
+  background-color: darkred;
+}
+
+/* CSS with class names */
+
+/* Updated CSS for the container */
+.search-results-container {
+
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.14);
+  background-color: #fff;
+  overflow: hidden; /* Hide overflow content on smaller screens */
+}
+
+
+/* Style for the heading */
+.search-results-heading {
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  margin-top: 1px;
+}
+
+/* Style for the list */
+.search-results-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style for list items */
+.search-results-item {
+  margin-bottom: 10px;
+}
+
+/* Style for the links */
+.search-results-link {
+  text-decoration: none;
+  color: #007bff; /* You can change this color to your preference */
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Hover effect for the links */
+.search-results-link:hover {
+  color: #0056b3; /* You can change this color to your preference */
+  text-decoration: underline;
+}
+
+
