@@ -1,4 +1,4 @@
-/* SearchBar.css (CSS Styles) */
+/* -Bar.css (CSS Styles) */
 .search-container {
     display: flex;
     flex-direction: column;
@@ -44,6 +44,7 @@
   
   .search-icon{
     background-color: #ffffff;  
+    margin-right: 10px;
     color: white;
     padding: 1px;
     cursor: pointer;
@@ -87,7 +88,7 @@
   }  
 
   /* Margin between icons */
-  .search-icon + .speech-icon {
+  .search-icon + .speech-icon + .add-img-button {
     margin-left: 5px;
   }
 
@@ -104,6 +105,23 @@
   
   /* Change color on hover */
   .search-button:hover { 
+    transform: scale(1.1); /* Adjust the scale factor as needed */
+    cursor: pointer;
+  }
+
+  .add-img-button {
+    width: 130px;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    background-color: #f44242; /* Default color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+   
+  .add-img-button:hover { 
     transform: scale(1.1); /* Adjust the scale factor as needed */
     cursor: pointer;
   }
@@ -161,7 +179,6 @@
 
 /* Updated CSS for the container */
 .search-results-container {
-
   margin: 20px;
   padding: 20px;
   border: 1px solid #ddd;
@@ -179,9 +196,9 @@
 
 /* Style for the heading */
 .search-results-heading {
+  margin-bottom: 0.5px; 
   color: #333;
-  font-size: 1.5em;
-  margin-bottom: 15px;
+  font-size: 1.5em; 
   margin-top: 1px;
 }
 
@@ -210,4 +227,65 @@
   text-decoration: underline;
 }
 
+.time-cont{
+  margin-top: 0.5px;
+  font-size: medium;  
+  font-weight: 400; 
+}
 
+
+
+
+/* Styles for the form container */
+.form1 {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  width: 600px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+/* Styles for the form labels */
+.lb {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.txt {
+  padding: 8px;
+  margin: 5px 0 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: "font-family-example", sans-serif;
+}
+
+/* Styles for the submit button */
+.btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Hover effect for the submit button */
+.btn:hover {
+  background-color: #45a049;
+}
+
+.inp{
+  margin-top: 10px;
+  flex: 1; 
+  padding: 10px; 
+  outline: 2px solid rgba(0, 0, 0, 0.088);
+  border: 1px solid rgba(0, 0, 0, 0.116);
+}
+
+.inp:focus{
+  outline: 2px solid black;
+  border: 1px solid black;
+}
